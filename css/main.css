@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+nav{
+    background-color: #fff;
+}
+
+.cinta{
+    background-image: url("../img/azulFondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: .5rem;
+    color: #fff;
+}
+
+.title{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.body{
+  font-size: 18px;
+}
+
+.numero{
+  color: #f68925;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.des{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.back{
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: .5rem;
+}
+
+.back a{
+    color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f5f6f7;
+  font-family: "Nunito", sans-serif;
+}
+
+.content{
+    margin: 0 auto;
+}
+
+  .active-animate {
+    animation: moveRight 1s;
+  }
+
+  .inactive-animate {
+    display: block;
+    animation: moveLeft 1s;
+  }
+
+  .step{
+    margin-top: 5rem;
+      box-sizing: content-box;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #fff;
+  }
+
+  .encabezado{
+      font-weight: bold;
+      font-size: 1.5rem;
+  }
+
+  .centrado{
+      width: 80%;
+      margin: 0 auto !important;
+      padding: 1rem;
+  }
+
+  .no-padding{
+      padding: 0 !important;
+      margin: 0;
+  }
+
+  .selected{
+      border: #039be5 solid 2px;
+      background-color: rgba(3, 155, 229, 0.1);
+  }
+
+  .paq{
+    cursor: pointer;
+  }  
+
+  @keyframes moveRight {
+    0% {
+      transform: translateX(-27rem) scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0rem) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveLeft {
+    0% {
+      transform: translateX(0rem) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(27rem) scale(0.9);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
