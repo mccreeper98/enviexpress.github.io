@@ -1,13 +1,37 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@font-face {
+  font-family: "Geneva";
+  src: url("../fonts/geneva/Geneva.ttf");
+}
 
-nav{
+@font-face {
+  font-family: "Antonio";
+  src: url("../fonts/antonio/Antonio-Bold.ttf");
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geneva", sans-serif !important;
+}
+
+.nav{
+  padding: .5rem;
     background-color: #fff;
 }
 
+.logo{
+  width: 40%;
+}
+
+.banner{
+  width: 100%;
+}
+
 .cinta{
-    background-image: url("../img/azulFondo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin-top: 1rem;
+    background:linear-gradient(to bottom, #30a8d4, #0155a8);
     padding: .5rem;
     color: #fff;
 }
@@ -15,21 +39,55 @@ nav{
 .title{
   text-transform: uppercase;
   font-weight: bold;
+  font-family: "Antonio", sans-serif !important;
+}
+
+.botones{
+  font-family: "Antonio", sans-serif !important;
+  font-weight: 900;
 }
 
 .body{
   font-size: 18px;
+  text-align: left;
 }
 
 .numero{
-  color: #f68925;
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: bold;
+  padding-top: 5px;
+}
+
+.paqueteria{
+  width: 50%;
+  cursor: pointer;
 }
 
 .des{
   font-size: 1.5rem;
-  text-transform: uppercase;
+}
+
+.naranja{
+  background-color: rgba(241, 140, 2, 0.3);
+  text-align: left;
+}
+
+.azul{
+  background-color: rgba(23, 125, 190, 0.3);
+  text-align: left;
+}
+
+.boton{
+  background-color: #f19202;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.boton:hover {
+  background-color: #ba7102;
 }
 
 .back{
@@ -42,11 +100,6 @@ nav{
     color: #000;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   background: #f5f6f7;
   font-family: "Nunito", sans-serif;
@@ -65,12 +118,22 @@ body {
     animation: moveLeft 1s;
   }
 
+  .pasos{
+    background-image: url('../img/mapa.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+  }
+
   .step{
-    margin-top: 5rem;
-      box-sizing: content-box;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      background-color: #fff;
+    box-sizing: content-box;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    min-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .encabezado{
@@ -97,6 +160,13 @@ body {
   .paq{
     cursor: pointer;
   }  
+
+  .box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   @keyframes moveRight {
     0% {

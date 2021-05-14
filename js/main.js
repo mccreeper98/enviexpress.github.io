@@ -1,4 +1,7 @@
 function next(number){
+  if(number == 1){
+    document.querySelector('#pasos').classList.remove('hide');
+  }
   const nextStep = document.querySelector(`#step${number}`);
 
   nextStep.classList.remove("hide");

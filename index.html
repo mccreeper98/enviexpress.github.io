@@ -13,15 +13,13 @@
 
     <body>
 
-        <nav>
-            <div class="nav-wrapper">
-              <a href="#" class="brand-logo center"><img src="img/logo.png"></a>
-            </div>
-        </nav>
-
         <main>
+            <div class="nav center">
+              <a href="#"><img src="img/logo.png" class="logo"></a>
+            </div>
+            <img src="img/banner.jpg" class="banner">
             <div class="cinta center">
-                <h3 class="title">Obtenga una cotización</h3>
+                <h3 class="title">Cotice aquí su envío</h3>
             </div>
 
             <div class="back">
@@ -32,327 +30,377 @@
 
               <div class="introduction">
                 <p class="container body">
-                  Podemos ofrecerle una cotización instantánea para sus envíos nacionales, tanto en paquetes pequeños y grandes, asi como paquetes especiales. Llene los detalles de su envío a continuación para generar su cotización.
+                  Mediante nuestro cotizador en linea podrá obtener de manera rápida y precisa el costo de su envio dentro de la ciudad de México, así como para cualquier parte del país, sin importar la forma o tamaño de su(s) paquete(s). <br><br> Le invitamos a seguir cada uno de los paso a continuación para obtener la información sobre su envio.
                 </p>
+                <br><br>
                 <div class="row">
-                  <div class="col s6">
-                    <h2 class="numero">1</h2>
-                    <p class="des"><b>Introduzca C.P. de destino y Datos de Contacto</b></p>
-                  </div>
-
-                  <div class="col s6">
-                    <h2 class="numero">2</h2>
-                    <p class="des"><b>Seleccione la paquetería</b></p>
+                  <div class="col s3"></div>
+                  <div class="col s6 naranja">
+                    <p class="des"><b><span class="numero">1</span> Introduzca C.P. y Datos de Contacto</b></p>
                   </div>
                 </div>
 
                 <div class="row">
-                  <div class="col s6">
-                    <h2 class="numero">3</h2>
-                    <p class="des"><b>Describa su paquete</b></p>
-                  </div>
-
-                  <div class="col s6">
-                    <h2 class="numero">4</h2>
-                    <p class="des"><b>Elija el tipo de envío</b></p>
+                  <div class="col s3"></div>
+                  <div class="col s6 azul">
+                    <p class="des"><b><span class="numero">2</span> Seleccione la paquetería</b></p>
                   </div>
                 </div>
 
+                <div class="row">
+                  <div class="col s3"></div>
+                  <div class="col s6 naranja">
+                    <p class="des"><b><span class="numero">3</span> Describa su paquete</b></p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s3"></div>
+                  <div class="col s6 azul">
+                    <p class="des"><b><span class="numero">4</span> Elija el tipo de envío</b></p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s3"></div>
+                  <div class="col s6 naranja">
+                    <p class="des"><b><span class="numero">5</span> Obtenga una cotización estimada</b></p>
+                  </div>
+                </div>
+                <br>
                 <div class="row">
                   <div class="col s3">
 
                   </div>
-                  <div class="col s6">
-                    <h2 class="numero">5</h2>
-                    <p class="des"><b>Obtenga una cotización estimada</b></p>
+                  <div class="col s6 right-align">
+                    <a class="waves-effect btn boton botones" onclick=" next(1)">Comenzar</a>
                   </div>
                 </div>
-
-                <div class="row">
-                  <div class="col s3">
-
-                  </div>
-                  <div class="col s6">
-                    <a class="waves-effect btn" style="background-color: #f68925; width: 100%;" onclick=" next(1)">Comenzar</a>
-                  </div>
-                </div>
-                
+                <br><br>
               </div>
-              
 
-                <div class="container center step z-depth-2 hide" id="step1">
+            </div>
 
-                    <p class="encabezado">C.P. DE DESTINO Y DATOS DE CONTACTO</p>
-                    
-                    <div class="centrado row">
-                        <form class="col s12">
-                          <div class="row no-padding">
-                            <div class="input-field col s6">
-                              <input id="cp" name="cp" type="text" class="validate" required>
-                              <label for="cp">Código Postal</label>
-                            </div>
-                          </div>
-                          <div class="row no-padding">
-                            <div class="input-field col s12">
-                              <input  id="name" name="name" type="text" class="validate" required>
-                              <label for="name">Nombre(s)</label>
-                            </div>
-                          </div>
-                          <div class="row no-padding">
-                            <div class="input-field col s12">
-                              <input id="lastn" name="lastn" type="text" class="validate" required>
-                              <label for="lastn">Apellidos</label>
-                            </div>
-                          </div>
-                          <div class="row no-padding">
-                            <div class="input-field col s6">
-                              <input id="email" name="email" type="email" class="validate" required>
-                              <label for="email" data-error="Ingresa un correo valido">Correo Electrónico</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="phone" name="phone" type="tel" class="validate" minlength="10" required>
-                                <label for="phone" data-error="Ingresa un teléfono valido">Teléfono</label>
-                              </div>
-                          </div>
-                          <div class="row no-padding">
-                            <div class="input-field col s12">
-                                <input id="reason" name="reason" type="text" class="validate">
-                                <label for="reason">Razón Social</label>
-                              </div>
-                          </div>
+            <div class="pasos hide" id="pasos">
+              <div class="box hide" id="step1">
+                <div class="container center step z-depth-2">
 
-                        </form>
-                      </div>
-                      <div class="row">
-                        <div class="col s6"></div>
-                        <div class="col s6">
-                          <a class="green-effect green btn" onclick=" next(2)">Siguiente</a>
+                  <p class="encabezado">C.P. Y DATOS DE CONTACTO</p>
+                  
+                  <div class="centrado row">
+                      <form class="col s12">
+                        <div class="row no-padding">
+                          <div class="input-field col s6">
+                            <input id="cpo" name="cpo" type="text" class="validate" required>
+                            <label for="cpo">Código Postal Origen*</label>
+                          </div>
+                          <div class="input-field col s6">
+                            <input id="cpd" name="cpd" type="text" class="validate" required>
+                            <label for="cpd">Código Postal Destino*</label>
+                          </div>
                         </div>
-                    </div>
-                </div>
-
-
-                <div class="container center step z-depth-2 hide" id="step2">
-
-                    <p class="encabezado">Seleccione la paqueteria</p>
-                    
-                    <div class="centrado row">
-                        <a onclick="selectPaq(1, 6)">
-                          <div class="col s4 valign-wrapper center paq selected" style="min-height: 8rem;" id="paq1">
-                              <img src="img/paqueterias/dhl.jpg" class="responsive-img">
+                        <div class="row no-padding">
+                          <div class="input-field col s12">
+                            <input  id="name" name="name" type="text" class="validate" required>
+                            <label for="name">Nombre(s)*</label>
                           </div>
-                        </a>
-
-                        <a onclick="selectPaq(2, 6)">
-                          <div class="col s4 valign-wrapper center paq" style="min-height: 8rem;" id="paq2">
-                              <img src="img/paqueterias/estafeta.jpg" class="responsive-img">
-                          </div>
-                        </a>
-
-                        <a onclick="selectPaq(3, 6)">
-                          <div class="col s4 valign-wrapper center paq" style="min-height: 8rem;" id="paq3">
-                              <img src="img/paqueterias/fedex.png" class="responsive-img">
-                          </div>
-                        </a>
-
-                        <a onclick="selectPaq(4, 6)">
-                          <div class="col s4 valign-wrapper center paq" style="min-height: 8rem;" id="paq4">
-                              <img src="img/paqueterias/paqueteexpress.png" class="responsive-img">
-                          </div>
-                        </a>
-
-                        <a onclick="selectPaq(5, 6)">
-                          <div class="col s4 valign-wrapper center paq" style="min-height: 8rem;" id="paq5">
-                              <img src="img/paqueterias/redpack.png" class="responsive-img">
-                          </div>
-                        </a>
-
-                        <a onclick="selectPaq(6, 6)">
-                          <div class="col s4 valign-wrapper center paq" style="min-height: 8rem;" id="paq6">
-                              <img src="img/paqueterias/ups.png" class="responsive-img">
-                          </div>
-                        </a>
-
-                      </div>
-                      <br>
-                      <div class="row">
-                        <div class="col s6"> <a class="green-effect btn" style="background-color: #f68925;" onclick="prev(1)">Anterior</a></div>
-                        <div class="col s6">
-                          <a class="green-effect green btn" onclick=" next(3)">Siguiente</a>
                         </div>
-                    </div>
-                </div>
-
-                <div class="container center step z-depth-2 hide" id="step3">
-
-                    <p class="encabezado">Describa su paquete.</p>
-                    
-                    <div class="centrado row">
-                        <form class="col s12">
-                          <div class="row no-padding">
-                            <div class="input-field col s6">
-                              <input id="peso" name="peso" type="text" class="validate" required>
-                              <label for="peso">Peso (kg)</label>
-                            </div>
-                            <div class="input-field col s6">
-                              <input  id="alto" name="alto" type="text" class="validate" required>
-                              <label for="alto">Alto (cm)</label>
-                            </div>
+                        <div class="row no-padding">
+                          <div class="input-field col s12">
+                            <input id="lastn" name="lastn" type="text" class="validate" required>
+                            <label for="lastn">Apellidos*</label>
                           </div>
-                          <div class="row no-padding">
-                            <div class="input-field col s6">
-                              <input id="largo" name="largo" type="text" class="validate" required>
-                              <label for="largo">Largo (cm)</label>
-                            </div>
-                            <div class="input-field col s6">
-                              <input id="ancho" name="ancho" type="text" class="validate" required>
-                              <label for="ancho">Ancho (cm)</label>
-                            </div>
-                          </div>
-
-                              <div class="row no-padding">
-                                <div class="input-field col s12">
-                                  <input id="descripcion" name="descripcion" type="text" class="validate" required>
-                                  <label for="descripcion">Descripción del Contenido</label>
-                                </div>
-                              </div>
-                              <br>
-                              <div class="row">
-                                <div class="col s6">
-                                    <input type="checkbox" id="fragil" />
-                                    <label for="fragil">Frágil</label>
-                                </div>
-                                <div class="col s6">
-                                    <input type="checkbox" id="especial"/>
-                                    <label for="especial">Manejo Especial</label>
-                                  </div>
-                            </div>
-                                
-                                  <div class="row hide" id="esp">
-                                      <div class="col s6">
-    
-                                      </div>
-    
-                                      <div class="input-field col s6">
-                                        <input id="manejo" name="manejo" type="text" class="validate" required>
-                                        <label for="manejo">Describa el Manejo Especial</label>
-                                      </div>
-                                  </div>
-
-                        </form>
-                      </div>
-                      <div class="row">
-                        <div class="col s6"> <a class="green-effect btn" style="background-color: #f68925;"  onclick="prev(2)">Anterior</a></div>
-                        <div class="col s6">
-                          <a class="green-effect green btn" onclick=" next(4)">Siguiente</a>
                         </div>
+                        <div class="row no-padding">
+                          <div class="input-field col s6">
+                            <input id="email" name="email" type="email" class="validate" required>
+                            <label for="email" data-error="Ingresa un correo valido">Correo Electrónico*</label>
+                          </div>
+                          <div class="input-field col s6">
+                              <input id="phone" name="phone" type="tel" class="validate" minlength="10" required>
+                              <label for="phone" data-error="Ingresa un teléfono valido">Teléfono*</label>
+                            </div>
+                        </div>
+                        <div class="row no-padding">
+                          <div class="input-field col s12">
+                              <input id="reason" name="reason" type="text" class="validate">
+                              <label for="reason">Razón Social</label>
+                            </div>
+                        </div>
+  
+                        <p class="right-align">
+                          * campos obligatorios
+                        </p>
+  
+                        <p>
+                          <input type="checkbox" id="terminos" />
+                          <label for="terminos">Estoy de acuerdo con el <a href="https://www.envi-express.mx/descargables/AVISO%20DE%20PRIVACIDAD.pdf" style="color: #9e9e9e;">aviso de privacidad</a></label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="info" />
+                          <label for="info">Deseo recibir novedades y promociones en mi correo</label>
+                        </p>
+  
+                      </form>
                     </div>
+                    <div class="row">
+                      <div class="col s6"></div>
+                      <div class="col s6">
+                        <a class="green-effect btn botones" onclick="next(2)" style="background-color: #177dbe; color: #000; font-weight: bold;">Siguiente</a>
+                      </div>
+                  </div>
                 </div>
+              </div>
 
-                <div class="container center step z-depth-2 hide" id="step4">
+              <div class="box hide" id="step2">
+                <div class="container center step z-depth-2">
 
-                    <p class="encabezado">Tipo de Envío</p>
-                    
-                    <div class="centrado row">
-                      <a class="paq" onclick="selectenv(1, 2)">
-                        <div class="col s6 card black-text selected" id="env1">
-                            <h5>Estandar: </h6>
-                            <p>Costo: $350.00</p>
-                            <br>
+                  <p class="encabezado">Seleccione la paqueteria</p>
+                  
+                  <div class="centrado row">
+
+                      <a onclick="selectPaq(1, 3)">
+                        <div class="paq" id="paq1">
+                            <img src="img/paqueterias/fedex.png" class="paqueteria">
                         </div>
                       </a>
-                        <a class="paq" onclick="selectenv(2, 2)" >
-                        <div class="col s6 card black-text" id="env2">
-                            <h5>Urgente: </h5>
-                            <p>Costo: $790.00</p>
-                            <br>
+
+                      <a onclick="selectPaq(2, 3)">
+                        <div class="paq" id="paq2">
+                            <img src="img/paqueterias/paquete.png" class="paqueteria">
                         </div>
                       </a>
-                      </div>
 
-
-                      <div class="container center">
-                        <h5>Servicio Local</h5>
-
-                        <table class="striped centered responsive-table">
-                            <thead>
-                              <tr>
-                                  <th>Peso</th>
-                                  <th>Express (120 min)</th>
-                                  <th>Mismo Día</th>
-                                  <th>Día Siguiente</th>
-                              </tr>
-                            </thead>
-                    
-                            <tbody>
-                              <tr>
-                                <td>1 A 5 kg</td>
-                                <td>$258.00</td>
-                                <td>$233.00</td>
-                                <td>$187.00</td>
-                              </tr>
-                              <tr>
-                                <td>5 A 10 kg</td>
-                                <td>$336.00</td>
-                                <td>$297.00</td>
-                                <td>$207.00</td>
-                              </tr>
-                              <tr>
-                                <td>10 A 15 kg</td>
-                                <td>$387.00</td>
-                                <td>$362.00</td>
-                                <td>$228.00</td>
-                              </tr>
-                              <tr>
-                                <td>20 A 30 kg</td>
-                                <td>N/A</td>
-                                <td>$495.00</td>
-                                <td>$370.00</td>
-                              </tr>
-                              <tr>
-                                <td>30 A 40 kg</td>
-                                <td>N/A</td>
-                                <td>$504.00</td>
-                                <td>$436.00</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                      </div>
-                      <br>
-                      <div class="container center">
-                        <h5>Servicios Adicionales</h5>
-
-                        <table class="striped centered responsive-table">
-                            <thead>
-                              <tr>
-                                  <th>ZONA EXTENDIDA</th>
-                                  <th>CORRECCIÓN DE DIRECCIÓN</th>
-                                  <th>SEGURO</th>
-                                  <th>FORMA IRREGULAR</th>
-                                  <th>EXCESO DE CARGA 30KG</th>
-                              </tr>
-                            </thead>
-                    
-                            <tbody>
-                              <tr>
-                                <td>$157.00</td>
-                                <td>$79.00</td>
-                                <td>$92.00 + 1% DEL VALOR DECLARADO</td>
-                                <td>$175.00</td>
-                                <td>$175.00</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                      </div>
-                      <br>
-                      <div class="row">
-                        <div class="col s6"> <a class="green-effect btn" style="background-color: #f68925;"  onclick="prev(3)">Anterior</a></div>
-                        <div class="col s6">
-                          <a class="green-effect green btn">Cotizar</a>
+                      <a onclick="selectPaq(3, 3)">
+                        <div class="paq" id="paq3">
+                            <img src="img/paqueterias/redpack.png" class="paqueteria">
                         </div>
-                    </div>
-                </div>
+                      </a>
 
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="col s6"> <a class="green-effect btn botones" style="background-color: #f19202; color: #000; font-weight: bold;" onclick="prev(1)">Anterior</a></div>
+                      <div class="col s6">
+                        <a class="green-effect btn botones" onclick=" next(3)" style="background-color: #177dbe; color: #000; font-weight: bold;">Siguiente</a>
+                      </div>
+                  </div>
+              </div>
+              </div>
+
+              <div class="box hide" id="step3">
+                <div class="container center step z-depth-2">
+
+                  <p class="encabezado">Describa su paquete.</p>
+                  
+                  <div class="centrado row">
+                      <form class="col s12">
+                        <div class="row no-padding">
+                          <div class="input-field col s6">
+                            <input id="peso" name="peso" type="text" class="validate" required>
+                            <label for="peso">Peso (kg)*</label>
+                          </div>
+                          <div class="input-field col s6">
+                            <input  id="alto" name="alto" type="text" class="validate" required>
+                            <label for="alto">Alto (cm)*</label>
+                          </div>
+                        </div>
+                        <div class="row no-padding">
+                          <div class="input-field col s6">
+                            <input id="largo" name="largo" type="text" class="validate" required>
+                            <label for="largo">Largo (cm)*</label>
+                          </div>
+                          <div class="input-field col s6">
+                            <input id="ancho" name="ancho" type="text" class="validate" required>
+                            <label for="ancho">Ancho (cm)*</label>
+                          </div>
+                        </div>
+
+                            <div class="row no-padding">
+                              <div class="input-field col s12">
+                                <input id="descripcion" name="descripcion" type="text" class="validate" required>
+                                <label for="descripcion">Descripción del Contenido*</label>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col s6">
+                                  <input type="checkbox" id="fragil" />
+                                  <label for="fragil">Frágil</label>
+                              </div>
+                              <div class="col s6">
+                                  <input type="checkbox" id="especial"/>
+                                  <label for="especial">Manejo Especial</label>
+                                </div>
+                          </div>
+                              
+                                <div class="row hide" id="esp">
+                                    <div class="col s6">
+
+                                    </div>
+
+                                    <div class="input-field col s6">
+                                      <input id="manejo" name="manejo" type="text" class="validate" required>
+                                      <label for="manejo">Describa el Manejo Especial*</label>
+                                    </div>
+                                </div>
+                                <p class="right-align">
+                                  * campos obligatorios
+                                </p>
+                      </form>
+                    </div>
+                    <div class="row">
+                      <div class="col s6"> <a class="green-effect btn botones" style="background-color: #f19202; color: #000; font-weight: bold;"  onclick="prev(2)">Anterior</a></div>
+                      <div class="col s6">
+                        <a class="green-effect btn botones" onclick="next(4)" style="background-color: #177dbe; color: #000; font-weight: bold;">Siguiente</a>
+                      </div>
+                  </div>
+              </div>
+              </div>
+
+              <div class="box hide" id="step4">
+                <div class="container center step z-depth-2">
+
+                  <p class="encabezado">Tipo de Envío</p>
+                  
+                  <div class="centrado row">
+                    <a class="paq" onclick="selectenv(1, 2)">
+                      <div class="col s6 card black-text selected" id="env1">
+                          <h5>Estandar: </h6>
+                          <p>Costo: $350.00</p>
+                          <br>
+                      </div>
+                    </a>
+                      <a class="paq" onclick="selectenv(2, 2)" >
+                      <div class="col s6 card black-text" id="env2">
+                          <h5>Urgente: </h5>
+                          <p>Costo: $790.00</p>
+                          <br>
+                      </div>
+                    </a>
+                    </div>
+
+
+                    <!-- <div class="container center">
+                      <h5>Servicio Local</h5>
+
+                      <table class="striped centered responsive-table">
+                          <thead>
+                            <tr>
+                                <th>Peso</th>
+                                <th>Express (120 min)</th>
+                                <th>Mismo Día</th>
+                                <th>Día Siguiente</th>
+                            </tr>
+                          </thead>
+                  
+                          <tbody>
+                            <tr>
+                              <td>1 A 5 kg</td>
+                              <td>$258.00</td>
+                              <td>$233.00</td>
+                              <td>$187.00</td>
+                            </tr>
+                            <tr>
+                              <td>5 A 10 kg</td>
+                              <td>$336.00</td>
+                              <td>$297.00</td>
+                              <td>$207.00</td>
+                            </tr>
+                            <tr>
+                              <td>10 A 15 kg</td>
+                              <td>$387.00</td>
+                              <td>$362.00</td>
+                              <td>$228.00</td>
+                            </tr>
+                            <tr>
+                              <td>20 A 30 kg</td>
+                              <td>N/A</td>
+                              <td>$495.00</td>
+                              <td>$370.00</td>
+                            </tr>
+                            <tr>
+                              <td>30 A 40 kg</td>
+                              <td>N/A</td>
+                              <td>$504.00</td>
+                              <td>$436.00</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    <br> -->
+                    <div class="container center">
+                      <h5 class="encabezado">Servicios Adicionales</h5>
+
+                      <table class="striped centered responsive-table">
+                          <thead>
+                            <tr>
+                                <th>Servicio</th>
+                                <th>Costo</th>
+                                <th>&nbsp;</th>                              
+                                <th>Agregar</th>
+                            </tr>
+                          </thead>
+                  
+                          <tbody>
+                            <tr>
+                              <td><b>ZONA EXTENDIDA</b></td>
+                              <td>$157.00</td>
+                              <td></td>
+                              <td>
+                                <input type="checkbox" id="adicional1"/>
+                                  <label for="adicional1"></label>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><b>CORRECCIÓN DE DIRECCIÓN</b></td>
+                              <td>$79.00</td>
+                              <td></td>
+                              <td>
+                                <input type="checkbox" id="adicional2"/>
+                                  <label for="adicional1"></label>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><b>SEGURO</b></td>
+                              <td>$92.00 + 1% DEL VALOR DECLARADO</td>
+                              <td></td>
+                              <td>
+                                <input type="checkbox" id="adicional3"/>
+                                  <label for="adicional1"></label>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><b>FORMA IRREGULAR</b></td>
+                              <td>$175.00</td>
+                              <td></td>
+                              <td>
+                                <input type="checkbox" id="adicional4"/>
+                                  <label for="adicional1"></label>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><b>EXCESO DE CARGA 30KG</b></td>
+                              <td>$175.00</td>
+                              <td></td>
+                              <td>
+                                <input type="checkbox" id="adicional5"/>
+                                  <label for="adicional1"></label>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                      <div class="col s6"> <a class="green-effect btn botones" style="background-color: #f19202; color: #000; font-weight: bold;"  onclick="prev(3)">Anterior</a></div>
+                      <div class="col s6">
+                        <a class="green-effect btn botones" style="background-color: #177dbe; color: #000; font-weight: bold;">Cotizar</a>
+                      </div>
+                  </div>
+              </div>
+              </div>
             </div>
         
         </main>
