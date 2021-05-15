@@ -59,7 +59,7 @@
 }
 
 .paqueteria{
-  width: 50%;
+  width: 80%;
   cursor: pointer;
 }
 
@@ -84,9 +84,11 @@
 }
 
 .bott{
-  padding-left: 1rem;
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .boton{
@@ -100,6 +102,19 @@
 
 .boton:hover {
   background-color: #ba7102;
+}
+
+.botona{
+  background-color: #177dbe;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.botona:hover {
+  background-color: #0f5480;
 }
 
 .back{
@@ -140,6 +155,7 @@ body {
   .step{
     box-sizing: content-box;
     padding: 1rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: #fff;
     min-height: 60%;
@@ -160,6 +176,11 @@ body {
   .encabezado{
       font-weight: bold;
       font-size: 1.5rem;
+  }
+
+  .leyenda{
+    font-size: 12px;
+    text-align: left;
   }
 
   .centrado{
@@ -183,7 +204,7 @@ body {
   }  
 
   .box{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;

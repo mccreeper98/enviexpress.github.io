@@ -1,6 +1,19 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Envi-Express &#8211; Cotizador</title>
+        <meta name='robots' content='noindex, nofollow' />
+        <link rel="shortcut icon" href="https://www.envi-express.mx/wp-content/uploads/2020/10/Favicom.jpg" type="image/x-icon" />
+        <meta property="og:title" content="Cotizador"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content="https://www.envi-express.mx/"/>
+        <meta property="og:site_name" content="Envi-Express"/>
+        <meta property="og:description" content="Somos una empresa joven 100% mexicana dedicada a dar soluciones integrales para la distribución de mercancía con alcance local, nacional e internacional fusionando nuestra infraestructura junto con la de nuestros aliados"/>
+        <meta property="og:image" content="https://www.envi-express.mx/wp-content/uploads/2020/06/avatar2.png"/>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -20,10 +33,6 @@
             <img src="img/banner.jpg" class="banner">
             <div class="cinta center">
                 <h3 class="title">Cotice aquí su envío</h3>
-            </div>
-
-            <div class="back">
-                <a href="">Regresar</a>
             </div>
 
             <div class="container center">
@@ -54,7 +63,8 @@
                     <p class="des"><b><span class="numero">5</span> Obtenga una cotización estimada</b></p>
                   </div>
                 <br>       
-                  <div class="bott right-align">
+                  <div class="bott">
+                    <a href="" class="waves-effect btn botona botones">Regresar</a>
                     <a class="waves-effect btn boton botones" onclick=" next(1)">Comenzar</a>
                   </div>
                 </div>
@@ -70,41 +80,41 @@
                   <p class="encabezado">C.P. Y DATOS DE CONTACTO</p>
                   
                   <div class="centrado row">
-                      <form class="col s12">
+                      <form class="col s12  m6 l12">
                         <div class="row no-padding">
-                          <div class="input-field col s6">
+                          <div class="input-field col s12 m6 l6">
                             <input id="cpo" name="cpo" type="text" class="validate" required>
                             <label for="cpo">Código Postal Origen*</label>
                           </div>
-                          <div class="input-field col s6">
+                          <div class="input-field col s12 m6 l6">
                             <input id="cpd" name="cpd" type="text" class="validate" required>
                             <label for="cpd">Código Postal Destino*</label>
                           </div>
                         </div>
                         <div class="row no-padding">
-                          <div class="input-field col s12">
+                          <div class="input-field col s12 m6 l12">
                             <input  id="name" name="name" type="text" class="validate" required>
                             <label for="name">Nombre(s)*</label>
                           </div>
                         </div>
                         <div class="row no-padding">
-                          <div class="input-field col s12">
+                          <div class="input-field col s12 m6 l12">
                             <input id="lastn" name="lastn" type="text" class="validate" required>
                             <label for="lastn">Apellidos*</label>
                           </div>
                         </div>
                         <div class="row no-padding">
-                          <div class="input-field col s6">
+                          <div class="input-field col s12 m6 l6">
                             <input id="email" name="email" type="email" class="validate" required>
                             <label for="email" data-error="Ingresa un correo valido">Correo Electrónico*</label>
                           </div>
-                          <div class="input-field col s6">
+                          <div class="input-field col s12 m6 l6">
                               <input id="phone" name="phone" type="tel" class="validate" minlength="10" required>
                               <label for="phone" data-error="Ingresa un teléfono valido">Teléfono*</label>
                             </div>
                         </div>
                         <div class="row no-padding">
-                          <div class="input-field col s12">
+                          <div class="input-field col s12 m6 l12">
                               <input id="reason" name="reason" type="text" class="validate">
                               <label for="reason">Razón Social</label>
                             </div>
@@ -207,11 +217,11 @@
                             </div>
                             <br>
                             <div class="row">
-                              <div class="col s6">
+                              <div class="col s12 m6 l12 left-align">
                                   <input type="checkbox" id="fragil" />
                                   <label for="fragil">Frágil</label>
                               </div>
-                              <div class="col s6">
+                              <div class="col s12 m6 l12 left-align">
                                   <input type="checkbox" id="especial"/>
                                   <label for="especial">Manejo Especial</label>
                                 </div>
@@ -222,7 +232,7 @@
 
                                     </div>
 
-                                    <div class="input-field col s6">
+                                    <div class="input-field col s12 m6 l6">
                                       <input id="manejo" name="manejo" type="text" class="validate" required>
                                       <label for="manejo">Describa el Manejo Especial*</label>
                                     </div>
@@ -248,14 +258,14 @@
                   
                   <div class="centrado row">
                     <a class="paq" onclick="selectenv(1, 2)">
-                      <div class="col s6 card black-text selected" id="env1">
+                      <div class="col s12 m6 l6 card black-text selected" id="env1">
                           <h5>Estandar: </h6>
                           <p>Costo: $350.00</p>
                           <br>
                       </div>
                     </a>
                       <a class="paq" onclick="selectenv(2, 2)" >
-                      <div class="col s6 card black-text" id="env2">
+                      <div class="col s12 m6 l6 card black-text" id="env2">
                           <h5>Urgente: </h5>
                           <p>Costo: $790.00</p>
                           <br>
@@ -314,65 +324,31 @@
                     <br> -->
                     <div class="container center">
                       <h5 class="encabezado">Servicios Adicionales</h5>
-
+                      <br>
+                      <p>De acuerdo a las características de su(s) paquete(s) considere la siguiente tabla de costos</p>
                       <table class="striped centered responsive-table">
                           <thead>
                             <tr>
-                                <th>Servicio</th>
-                                <th>Costo</th>
-                                <th>&nbsp;</th>                              
-                                <th>Agregar</th>
+                                <th>ZONA EXTENDIDA</th>
+                                <th>CORRECCIÓN DE DIRECCIÓN</th>
+                                <th>SEGURO</th>                              
+                                <th>FORMA IRREGULAR</th>
+                                <th>EXCESO DE CARGA 30KG</th>
                             </tr>
                           </thead>
                   
                           <tbody>
                             <tr>
-                              <td><b>ZONA EXTENDIDA</b></td>
                               <td>$157.00</td>
-                              <td></td>
-                              <td>
-                                <input type="checkbox" id="adicional1"/>
-                                  <label for="adicional1"></label>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><b>CORRECCIÓN DE DIRECCIÓN</b></td>
                               <td>$79.00</td>
-                              <td></td>
-                              <td>
-                                <input type="checkbox" id="adicional2"/>
-                                  <label for="adicional2"></label>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><b>SEGURO</b></td>
                               <td>$92.00 + 1% DEL VALOR DECLARADO</td>
-                              <td></td>
-                              <td>
-                                <input type="checkbox" id="adicional3"/>
-                                  <label for="adicional3"></label>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><b>FORMA IRREGULAR</b></td>
                               <td>$175.00</td>
-                              <td></td>
-                              <td>
-                                <input type="checkbox" id="adicional4"/>
-                                  <label for="adicional4"></label>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><b>EXCESO DE CARGA 30KG</b></td>
                               <td>$175.00</td>
-                              <td></td>
-                              <td>
-                                <input type="checkbox" id="adicional5"/>
-                                  <label for="adicional5"></label>
-                              </td>
                             </tr>
                           </tbody>
                         </table>
+                        <br>
+                        <p class="leyenda">Esta cotización solo es para referencia del usuario, para confirmar el envío y pago comunicarse a los teléfonos 55 70455360 / 55 70309881 Whatsapp 55 73393933</p>
                     </div>
                     <br>
                     <br>
