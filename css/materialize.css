@@ -2914,7 +2914,7 @@ table.bordered > tbody > tr {
 }
 
 table.striped > tbody > tr:nth-child(odd) {
-  background-color: #f2f2f2;
+  background-color: #CAC2C0;
 }
 
 table.striped > tbody > tr > td {
@@ -2939,7 +2939,7 @@ thead {
 }
 
 td, th {
-  padding: 15px 5px;
+  padding: 8px 0 8px 5px;
   display: table-cell;
   text-align: left;
   vertical-align: middle;
