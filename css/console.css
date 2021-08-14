@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+.logo{
+    width: 50%;
+}
+
+.hpan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.vpan{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barra{
+    max-width: 500px;
+}
+
+.card{
+    text-align: center;
+    align-items: center;
+}
+
+.boton {
+    background-color: #f19202;
+    color: #000;
+    letter-spacing: 0;
+    font-size: 1.5rem;
+  }
+  
+.page-footer{
+    background-color: transparent;
+    margin-left: 235px;
+}
