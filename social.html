@@ -19,20 +19,20 @@
             <a href="#!" class="brand-logo"><img src="img/logoh.png" alt="Ternurita"></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li class="active"><a href="index.html">Inicio</a></li>
-              <li><a href="#que">¿Qué es Ternurita?</a></li>
-              <li><a href="#como">¿Cómo Funciona?</a></li>
-              <li><a href="#!">Descargar App</a></li>
-              <li><a href="social.html">Responsabilidad Social</a></li>
-              <li><a href="#!">Contacto</a></li>
+                <li id="inicio"><a href="index.html" onclick="activar('inicio')">Inicio</a></li>
+                <li id="es"><a href="index.html#que" onclick="activar('es')">¿Qué es Ternurita?</a></li>
+                <li id="funciona"><a href="index.html#como" onclick="activar('funciona')">¿Cómo Funciona?</a></li>
+                <li id="descarga"><a href="#!" onclick="activar('descarga')">Descargar App</a></li>
+                <li class="active" id="social"><a href="social.html" onclick="activar('social')">Responsabilidad Social</a></li>
+                <li id="contacto"><a href="#contact" onclick="activar('contacto')">Contacto</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-              <li class="active"><a href="index.html">Inicio</a></li>
-              <li><a href="#que">¿Qué es Ternurita?</a></li>
-              <li><a href="#como">¿Cómo Funciona?</a></li>
-              <li><a href="#!">Descargar App</a></li>
-              <li><a href="social.html">Responsabilidad Social</a></li>
-              <li><a href="#!">Contacto</a></li>
+                <li  id="inicio"><a href="index.html" onclick="activar('inicio')">Inicio</a></li>
+                <li id="es"><a href="index.html#que" onclick="activar('es')">¿Qué es Ternurita?</a></li>
+                <li id="funciona"><a href="index.html#como" onclick="activar('funciona')">¿Cómo Funciona?</a></li>
+                <li id="descarga"><a href="#!" onclick="activar('descarga')">Descargar App</a></li>
+                <li class="active" id="social"><a href="social.html" onclick="activar('social')">Responsabilidad Social</a></li>
+                <li id="contacto"><a href="#contact" onclick="activar('contacto')">Contacto</a></li>
             </ul>
           </div>
         </nav>
@@ -46,23 +46,28 @@
             <div class="col s12 m6 l6 center">
                 <img src="img/social1.png" class="responsive-img">
             </div>
-            <div class="col s12 m6 l6">
+            <div class="col s12 l1" style="width: 4rem;"></div>
+            <div class="col s12 m6 l5">
                 <p class="title">Lorem ipsum</p>
                 <p class="letras">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
-                <div class="col s2 m1 l2 center">
+                <br>
+                <div class="row">
+                  <div class="col s2 m1 l2 center">
                     <img src="img/recicla.PNG" style="width: 100%;">
                 </div>
                 <div class="col s10 m5 l10">
-                    <p class="letras">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                    <p class="letras" style="margin-top: 0;">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                </div>
                 </div>
                 <p class="letras">Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. </p>
             </div>
+            <br>
             <div class="col s12 m6 l12">
                 <p class="letras">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. 
-                    <br> 
+                    <br> <br>
                     Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
-                    <br>
+                    <br><br>
                     Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. 
                 </p>
                 <br>
@@ -70,43 +75,76 @@
                 <br>
                 <p class="letras">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. 
-                    <br>
+                    <br><br>
                     Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
                 </p>
             </div>
         </div>
+        <br><br>
 
-        <div class="footer">
-          <br><br>
-          <div class="row" style="width: 90%;">
-            <div class="col s12 m6 l3 center">
-              <img src="img/logo.png" alt="Ternurita" class="logo">
-              <br>
+        <div class="footer hide-on-med-and-down" id="contact">
+            <br><br>
+            <div class="row" style="width: 90%;">
+              <div class="col s12 m6 l3 center">
+                <img src="img/logo.png" alt="Ternurita" class="logo">
+                <br>
+              </div>
+              <div class="col s12 m6 l3 left-align">
+                <p class="tienes">¿Tienes una duda o comentario?</p>
+                <p class="envianos">Envianos un email</p>
+                <p class="mail"><i class="material-icons imail">mail</i> &nbsp;hola@ternurita.com</p>
+              </div>
+              <div class="col s12 m6 l3 left-align">
+                <p class="descarga">Descarga la App</p>
+                <img src="img/appstore.png" alt="App Store" class="app">
+                <br>
+                <img src="img/playstore.png" alt="Google Play" class="play">
+              </div>
+              <div class="col s12 m6 l3 left-align">
+                <p class="encuentra">Encuéntranos en:</p>
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/insta.png" class="redes"></a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/fb.png" class="redes"></a>
+              </div>
             </div>
-            <div class="col s12 m6 l3 left-align">
-              <p class="tienes">¿Tienes una duda o comentario?</p>
-              <p class="envianos">Envianos un email</p>
-              <p class="mail"><i class="material-icons imail">mail</i> &nbsp;hola@ternurita.com</p>
-            </div>
-            <div class="col s12 m6 l3 left-align">
-              <p class="descarga">Descarga la App</p>
-              <img src="img/appstore.png" alt="App Store" class="app">
-              <br>
-              <img src="img/playstore.png" alt="Google Play" class="play">
-            </div>
-            <div class="col s12 m6 l3 left-align">
-              <p class="encuentra">Encuéntranos en:</p>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/insta.png" class="redes"></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/fb.png" class="redes"></a>
+            <br>
+            <br>  
+            <div class="divider"></div>
+            <div class="center">
+              <p class="copy">Ternurita @2021 · Términos y Condiciones · Aviso de Privacidad · Prowered by Banana Geek ®</p>
             </div>
           </div>
-          <br>
-          <br>  
-          <div class="divider"></div>
-          <div class="center">
-            <p class="copy">Ternurita @2021 · Términos y Condiciones · Aviso de Privacidad · Prowered by Banana Geek ®</p>
+  
+          <div class="footer hide-on-large-only" id="contact">
+            <br><br>
+            <div class="row" style="width: 90%;">
+              <div class="col s12 m6 l3 center">
+                <img src="img/logo.png" alt="Ternurita" class="logo">
+                <br>
+              </div>
+              <div class="col s12 m6 l3 center">
+                <p class="tienes">¿Tienes una duda o comentario?</p>
+                <p class="envianos">Envianos un email</p>
+                <p class="mail"><i class="material-icons imail">mail</i> &nbsp;hola@ternurita.com</p>
+              </div>
+              <div class="col s12 m6 l3 center">
+                <p class="descarga">Descarga la App</p>
+                <img src="img/appstore.png" alt="App Store" class="app">
+                <br>
+                <img src="img/playstore.png" alt="Google Play" class="play">
+              </div>
+              <div class="col s12 m6 l3 center">
+                <p class="encuentra">Encuéntranos en:</p>
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/insta.png" class="redes"></a>
+                  <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/fb.png" class="redes"></a>
+              </div>
+            </div>
+            <br>
+            <br>  
+            <div class="divider"></div>
+            <div class="center">
+              <p class="copy">Ternurita @2021 · Términos y Condiciones · Aviso de Privacidad · Prowered by Banana Geek ®</p>
+            </div>
           </div>
-        </div>
 
 
       </main>
@@ -124,37 +162,13 @@
           onOpen: function(el) { $('#menuGrup').addClass('hide'); }, // A function to be called when sideNav is opened
           onClose: function(el) { $('#menuGrup').removeClass('hide'); }, // A function to be called when sideNav is closed
         });
-        
-        var screenWidth = document.documentElement.scrollWidth;
-        console.log(document.documentElement.scrollWidth);
-        if(screenWidth <= 920) {
-            $('.slider').slider({
-            height: 1400
-          });
-          } else {
-            $('.slider').slider({
-            height: 745
-          });
-          }
-
-        // asociamos el manejador de evento
-        mediaqueryList.addListener(manejador);
         });
 
 
-        var mediaqueryList = window.matchMedia("(max-width: 920px)");
-
-        function manejador(EventoMediaQueryList) {
-          if(EventoMediaQueryList.matches) {
-            $('.slider').slider({
-            height: 1150
-          });
-          } else {
-            $('.slider').slider({
-            height: 745
-          });
-          }
+        function activar(elm){
+          $('#'+elm).addClass('active').siblings().removeClass('active');
         }
+        
 
        </script>
   </html>

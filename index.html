@@ -19,20 +19,20 @@
             <a href="#!" class="brand-logo"><img src="img/logoh.png" alt="Ternurita"></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li class="active"><a href="index.html">Inicio</a></li>
-              <li><a href="#que">¿Qué es Ternurita?</a></li>
-              <li><a href="#como">¿Cómo Funciona?</a></li>
-              <li><a href="#!">Descargar App</a></li>
-              <li><a href="social.html">Responsabilidad Social</a></li>
-              <li><a href="#!">Contacto</a></li>
+              <li class="active" id="inicio"><a href="index.html" onclick="activar('inicio')">Inicio</a></li>
+              <li id="es"><a href="#que" onclick="activar('es')">¿Qué es Ternurita?</a></li>
+              <li id="funciona"><a href="#como" onclick="activar('funciona')">¿Cómo Funciona?</a></li>
+              <li id="descarga"><a href="#!" onclick="activar('descarga')">Descargar App</a></li>
+              <li id="social"><a href="social.html" onclick="activar('social')">Responsabilidad Social</a></li>
+              <li id="contacto"><a href="#contact" onclick="activar('contacto')">Contacto</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-              <li class="active"><a href="index.html">Inicio</a></li>
-              <li><a href="#que">¿Qué es Ternurita?</a></li>
-              <li><a href="#como">¿Cómo Funciona?</a></li>
-              <li><a href="#!">Descargar App</a></li>
-              <li><a href="social.html">Responsabilidad Social</a></li>
-              <li><a href="#!">Contacto</a></li>
+              <li class="active" id="inicio"><a href="index.html" onclick="activar('inicio')">Inicio</a></li>
+              <li id="es"><a href="#que" onclick="activar('es')">¿Qué es Ternurita?</a></li>
+              <li id="funciona"><a href="#como" onclick="activar('funciona')">¿Cómo Funciona?</a></li>
+              <li id="descarga"><a href="#!" onclick="activar('descarga')">Descargar App</a></li>
+              <li id="social"><a href="social.html" onclick="activar('social')">Responsabilidad Social</a></li>
+              <li id="contacto"><a href="#contact" onclick="activar('contacto')">Contacto</a></li>
             </ul>
           </div>
         </nav>
@@ -42,12 +42,12 @@
 
         <img src="img/header.png" class="noborder">
 
-        <div class="center rosa">
+        <div class="center rosa" id="que">
           <img src="img/recicla.PNG" class="recicla-img">
           <p class="quees"> En Ternurita nos preocupamos por el medio ambiente</p>
         </div>
 
-        <div class="slider">
+        <div class="slider" >
           <ul class="slides">
             <li>
               <img src="img/slider.png"> 
@@ -70,12 +70,12 @@
           </ul>
         </div>
 
-        <div class="como">
+        <div class="como" id="como">
           <br>
           <br>
           <div class="row">
             
-              <div class="col s12 m6 l5 left-align">
+              <div class="col s12 m6 l5 left-align" >
                 <div class="content">
                 <p class="como-title">¿Cómo funciona?</p>
                 <div class="sabemos">
@@ -110,7 +110,7 @@
           <br>
         </div>
 
-        <div class="footer">
+        <div class="footer hide-on-med-and-down" id="contact">
           <br><br>
           <div class="row" style="width: 90%;">
             <div class="col s12 m6 l3 center">
@@ -129,6 +129,38 @@
               <img src="img/playstore.png" alt="Google Play" class="play">
             </div>
             <div class="col s12 m6 l3 left-align">
+              <p class="encuentra">Encuéntranos en:</p>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/insta.png" class="redes"></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/fb.png" class="redes"></a>
+            </div>
+          </div>
+          <br>
+          <br>  
+          <div class="divider"></div>
+          <div class="center">
+            <p class="copy">Ternurita @2021 · Términos y Condiciones · Aviso de Privacidad · Prowered by Banana Geek ®</p>
+          </div>
+        </div>
+
+        <div class="footer hide-on-large-only" id="contact">
+          <br><br>
+          <div class="row" style="width: 90%;">
+            <div class="col s12 m6 l3 center">
+              <img src="img/logo.png" alt="Ternurita" class="logo">
+              <br>
+            </div>
+            <div class="col s12 m6 l3 center">
+              <p class="tienes">¿Tienes una duda o comentario?</p>
+              <p class="envianos">Envianos un email</p>
+              <p class="mail"><i class="material-icons imail">mail</i> &nbsp;hola@ternurita.com</p>
+            </div>
+            <div class="col s12 m6 l3 center">
+              <p class="descarga">Descarga la App</p>
+              <img src="img/appstore.png" alt="App Store" class="app">
+              <br>
+              <img src="img/playstore.png" alt="Google Play" class="play">
+            </div>
+            <div class="col s12 m6 l3 center">
               <p class="encuentra">Encuéntranos en:</p>
                 <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/insta.png" class="redes"></a>
                 <a href="http://" target="_blank" rel="noopener noreferrer"><img src="img/fb.png" class="redes"></a>
@@ -192,6 +224,10 @@
             indicators: false
           });
           }
+        }
+
+        function activar(elm){
+          $('#'+elm).addClass('active').siblings().removeClass('active');
         }
 
        </script>
