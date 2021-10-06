@@ -1,0 +1,346 @@
+nav{
+    background-color: #f3817e;
+}
+
+.brand-logo img{
+    width: 191px;
+    height: 48px;
+    margin: 6px auto 6px 26px
+}
+
+ul.right li{
+    margin-top: 1.3rem;
+}
+
+ul.right li a{
+    margin: 5px 0 4px 12px;
+    font-family: KohSantepheap;
+    font-size: 14px !important;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+ul.side-nav li a{
+    margin: 5px 0 4px 12px;
+    font-family: KohSantepheap;
+    font-size: 14px !important;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+nav ul li.active {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.side-nav li.active {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+ul.side-nav li.active a{
+    font-family: KohSantepheap;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #231f20;
+}
+
+ul.right li.active a{
+    font-family: KohSantepheap;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #231f20;
+}
+
+.noborder{
+    display: block;
+    margin-top: -64px;
+    width: 100%;
+    height: auto;
+}
+
+.rosa{
+    background-color: #cdadc3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.recicla-img{
+    width: 30px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.quees{
+    margin: 0;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.02;
+    letter-spacing: normal;
+    color: #000;
+}
+
+.line{
+    margin: 0 auto;
+    width: 60px;
+    border: solid 2px #f3817e;
+    background-color: #f3817e;
+}
+
+.como{
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+}
+
+.content{
+    margin-left: 2rem;
+}
+
+.como-title{
+    font-family: HelloMorgan;
+    font-size: 56px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #231f20;
+    margin-bottom: 20px;
+}
+
+.linec{
+    margin-top: -2rem;
+    width: 60px;
+    border: solid 2px #f3817e;
+    background-color: #f3817e;
+}
+
+.sabemos{
+    font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #000;
+  
+}
+
+.sabemos span{
+    font-weight: bold;
+}
+
+.elemento{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.elemento-img{
+    width: 84px;
+    height: 85px;
+}
+
+.elemento-text{
+    margin-left: 15px;
+    font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.phones{
+    width: 80%;
+    height: auto;
+}
+
+.footer{
+    background-color: #231f20;
+    padding-bottom: 18px;
+}
+
+.logo{
+    width: 134px;
+  height: 130px;
+}
+
+.tienes{
+    font-family: OpenSans;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.envianos{
+    font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #8ed0bc;
+  margin-bottom: 0;
+}
+
+.mail{
+    font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+  display: inline-flex;
+  margin-top: 8px;
+}
+
+.descarga{
+    font-family: OpenSans;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.encuentra{
+    font-family: OpenSans;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.app{
+    width: 155px;
+  height: 52px;
+}
+
+.play{
+    width: 176px;
+  height: 52px;
+}
+
+.centrar{
+    margin: 0 auto;
+}
+
+.copy{
+    padding-top: 8px;
+    font-family: OpenSans;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.redes{
+    width: 34px;
+    height: 34px;
+    margin-right: 17px;
+}
+
+.imail{
+    color: #8ed0bc;
+    line-height: .8;
+}
+
+.slider .indicators .indicator-item {
+    background-color: rgba(243, 129, 126, 0.2) !important;
+  }
+  
+  .slider .indicators .indicator-item.active {
+    background-color: #f3817e !important;
+  }
+
+  .mama{
+    font-family: HelloMorgan;
+    font-size: 56px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #231f20;
+    margin-bottom: 0;
+  }
+
+  .lineah{
+      width: 60%;
+  }
+
+  .es{
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    color: #000;
+  }
+
+  .tel{
+      width: 425px;
+  }
+
+  .as{
+      width: 155px;
+  }
+
+  .ps{
+      width:176px
+  }
+
+  .a{
+      width: 1rem;
+  }
