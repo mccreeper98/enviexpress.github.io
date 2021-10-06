@@ -163,11 +163,13 @@
         console.log(document.documentElement.scrollWidth);
         if(screenWidth <= 920) {
             $('.slider').slider({
-            height: 1400
+            height: 1400,
+            indicators: false
           });
           } else {
             $('.slider').slider({
-            height: 745
+            height: 745,
+            indicators: false
           });
           }
 
@@ -181,11 +183,13 @@
         function manejador(EventoMediaQueryList) {
           if(EventoMediaQueryList.matches) {
             $('.slider').slider({
-            height: 1150
+            height: 1150,
+            indicators: false
           });
           } else {
             $('.slider').slider({
-            height: 745
+            height: 745,
+            indicators: false
           });
           }
         }
