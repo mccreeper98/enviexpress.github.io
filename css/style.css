@@ -344,3 +344,25 @@ ul.right li.active a{
   .a{
       width: 1rem;
   }
+
+  .title{
+    font-family: HelloMorgan;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+  }
+
+  .letras{
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    color: #000;
+  }
