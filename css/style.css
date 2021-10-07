@@ -141,6 +141,12 @@ ul.right li.active a{
     color: #000;
 }
 
+@media  only screen and (max-width: 920px){
+  .quees{
+    line-height: 1.5;
+}  
+}
+
 .line{
     margin: 0 auto;
     width: 60px;
