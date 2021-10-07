@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans/OpenSans-Light.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans/OpenSans-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans/OpenSans-Semibold.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "HelloMorgan";
+  src: url("../fonts/HelloMorgan.ttf");
+}
+
 nav{
     background-color: #f3817e;
 }
@@ -371,39 +406,4 @@ ul.right li.active a{
   .margen{
       width: 90%;
       margin: 0 auto;
-  }
-
-  @font-face {
-    font-family: "OpenSans";
-    src: url("../fonts/OpenSans/OpenSans-Light.ttf") format("ttf");
-    font-weight: 100;
-  }
-  
-  @font-face {
-    font-family: "OpenSans";
-    src: url("../fonts/OpenSans/OpenSans-Light.ttf") format("ttf");
-    font-weight: 300;
-  }
-  
-  @font-face {
-    font-family: "OpenSans";
-    src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format("ttf");
-    font-weight: 400;
-  }
-  
-  @font-face {
-    font-family: "OpenSans";
-    src: url("../fonts/OpenSans/OpenSans-Semibold.ttf") format("ttf");
-    font-weight: 500;
-  }
-  
-  @font-face {
-    font-family: "OpenSans";
-    src: url("../fonts/OpenSans/OpenSans-Bold.ttf") format("ttf");
-    font-weight: 700;
-  }
-
-  @font-face {
-    font-family: "HelloMorgan";
-    src: url("../fonts/HelloMorgan.ttf") format("ttf");
   }
