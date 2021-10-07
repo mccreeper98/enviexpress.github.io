@@ -217,6 +217,10 @@ ul.right li.active a{
   color: #000;
 }
 
+.elemento-text span{
+  font-weight: bold;
+}
+
 .phones{
     width: 80%;
     height: auto;
