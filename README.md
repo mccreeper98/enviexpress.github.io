@@ -1,1 +1,0 @@
-"# ternuritas-landing" 
